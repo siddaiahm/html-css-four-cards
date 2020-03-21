@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    background: #fff;
+    margin: 150px 100px;
+    padding-top: 100px;
+}
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+    background: hsl(0, 0%, 98%);
+    color: hsl(229, 6%, 66%);
+    font: 600px 18px / 22px "Poppins";
+    font-size: 15px;
+  }
+h1,h2,h3 {
+    color: hsl(234, 12%, 34%);
+}
+h1,h2{
+    font-size: 36px;
+}
+.lead h2 {
+    color: hsl(229, 6%, 66%);
+    font-weight: lighter;
+}
+h3 {
+    font-size: 26px;
+}
+p {
+    font-size: 23px;
+}
+/*
+  ========================================
+  teasers & lead
+  ========================================
+*/
+.teaser {
+    max-width: 400px;
+    min-height: 300px;
+    padding: 10px 20px;
+    margin: 50px;
+    box-shadow:  5px 5px 5px 5px hsl(229, 16%, 85%);
+}
+.supervisor{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.team-builder{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.karma{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.calculator{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+/*
+  ========================================
+  flex & rows
+  ========================================
+*/
+.lead {
+ align-items: center;
+ text-align: center;
+}
+
+.grid,.grid-child {
+    display: flex;
+    justify-content: center;
+}
+.grid-child{
+    flex-direction: column;
+}
+
+.supervisor,.calculator {
+    align-self: center;
+}
+.team-builder{
+    align-self: flex-start;
+}
+.karma {
+    align-self: flex-end;
+}
+.teaser {
+    display: flex;
+    flex-direction: column;
+}
+.teaser img {
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+/*
+  ========================================
+  multiple support
+  ========================================
+*/
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    
+    .container{
+        margin:20px;
+    }
+    .grid {
+        display:flex;
+        flex-direction: column;
+    }
+  }
