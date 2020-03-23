@@ -19,4 +19,4 @@ app.get('/',(req,res)=>{
     res.render('home.ejs');
 });
 
-app.listen(process.env.port, console.log('listening on port 8008'));
+app.listen(process.env.PORT, console.log('listening on port 5000'));
