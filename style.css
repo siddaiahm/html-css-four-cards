@@ -108,7 +108,7 @@ p {
         margin:20px;
     }
     .teaser {
-        padding: 5px 10px;
+        min-height: 250px;
     }
     .grid {
         display:flex;
