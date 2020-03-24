@@ -106,10 +106,6 @@ p {
     .container{
         margin:20px;
     }
-    .teaser {
-        margin: 0px;
-        padding:10px 5px;
-    }
     .grid {
         display:flex;
         flex-direction: column;
