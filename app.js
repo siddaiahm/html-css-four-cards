@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 8000;
 let options = {
     dotfiles: "ignore",
     etag: true,
@@ -19,4 +20,4 @@ app.get('/',(req,res)=>{
     res.render('home.ejs');
 });
 
-app.listen(process.env.PORT, console.log('listening on port 5000'));
+app.listen(port, console.log('listening on port '+port));
