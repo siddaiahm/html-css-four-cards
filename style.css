@@ -106,8 +106,9 @@ p {
     .container{
         margin:20px;
     }
-    .grid{
-        padding:10px 5px;  
+    .teaser {
+        margin: 0px;
+        padding:10px 5px;
     }
     .grid {
         display:flex;
