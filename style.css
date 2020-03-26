@@ -1,14 +1,9 @@
-*,
-*:before,
-*:after{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 .container {
-    background: #fff;
+    background:hsl(0, 0%, 98%);
     margin: 150px 100px;
-    padding-top: 100px;
+    /* max-width: 1440px; */
+    padding: 70px;
 }
 /*
   ========================================
@@ -16,38 +11,46 @@
   ========================================
 */
 body {
-    background: hsl(0, 0%, 98%);
+    background: hsl(183, 49%, 92%);
     color: hsl(229, 6%, 66%);
-    font: 600px 18px / 22px "Poppins";
-    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: 600px 18px / 22px 'poppins';
+    font-size: 16px;
   }
 h1,h2,h3 {
     color: hsl(234, 12%, 34%);
 }
-h1,h2{
-    font-size: 36px;
+h1,h2,h3{
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.lead {
+    text-align: center;
+    padding: 10px;
+   }   
+.lead h1 {
+    font-weight: 700px;
 }
 .lead h2 {
     color: hsl(229, 6%, 66%);
     font-weight: lighter;
+    
 }
 h3 {
-    font-size: 26px;
-}
-p {
     font-size: 23px;
 }
+
 /*
   ========================================
   teasers & lead
   ========================================
 */
 .teaser {
-    max-width: 400px;
-    min-height: 300px;
-    padding: 10px 20px;
-    margin: 50px;
-    box-shadow:  5px 5px 5px 5px hsl(229, 16%, 85%);
+    background-color: #fff;
+    margin: 13px;
+    padding: 25px;
+    box-shadow:  4px 4px 4px 4px hsl(229, 16%, 90%);
 }
 .supervisor{
     border-top: 5px solid hsl(180, 62%, 55%);
@@ -66,33 +69,25 @@ p {
   flex & rows
   ========================================
 */
-.lead {
- align-items: center;
- text-align: center;
-}
-
 .grid,.grid-child {
     display: flex;
     justify-content: center;
 }
 .grid-child{
+    flex-basis: 17%;
     flex-direction: column;
 }
 
 .supervisor,.calculator {
+    flex-basis: 13%;
     align-self: center;
-}
-.team-builder{
-    align-self: flex-start;
-}
-.karma {
-    align-self: flex-end;
 }
 .teaser {
     display: flex;
     flex-direction: column;
 }
 .teaser img {
+    margin-top: 25px;
     align-self: flex-end;
     justify-content: flex-end;
 }
@@ -105,13 +100,66 @@ p {
     /* For mobile phones: */
     
     .container{
-        margin:20px;
+        margin:0px;
+        padding: 20px;
     }
     .teaser {
-        min-height: 250px;
+        margin: 10px 0px;
+    }
+    h1,h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    br {
+        content: "";
     }
     .grid {
         display:flex;
         flex-direction: column;
+    }
+  }
+  @media only screen and (max-width:1300px) and (min-width:1001px) {
+    /* For ipod : */
+    
+    .container {
+        margin: 150px 30px;
+        padding: 30px;
+    }
+    .grid-child{
+        flex-basis: 36%;
+        flex-direction: column;
+    }
+    
+    .supervisor,.calculator {
+        flex-basis: 26%;
+        align-self: center;
+    }
+  }
+  @media only screen and (max-width:1000px) and (min-width:501px) {
+    /* For ipod pro: */
+    
+    .container {
+        margin: 60px 20px;
+        padding: 30px 0px;
+    }
+    h1,h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .grid-child{
+        flex-basis: 40%;
+        flex-direction: column;
+    }
+    .team-builder,.karma{
+        padding: 10px;
+    }
+    .supervisor,.calculator {
+        padding: 10px;
+        flex-basis: 35%;
+        align-self: center;
     }
   }
