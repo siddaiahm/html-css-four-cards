@@ -102,12 +102,13 @@ h3 {
     .container{
         margin:0px;
         padding: 20px;
+        font-size: 13px;
     }
     .teaser {
         margin: 10px 0px;
     }
     h1,h2 {
-        font-size: 22px;
+        font-size: 21px;
     }
     h3 {
         font-size: 18px;
@@ -126,6 +127,7 @@ h3 {
     .container {
         margin: 150px 30px;
         padding: 30px;
+        font-size: 14px;
     }
     .grid-child{
         flex-basis: 32%;
