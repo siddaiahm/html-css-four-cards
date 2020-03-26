@@ -1,10 +1,10 @@
-/* *,
+*,
 *:before,
 *:after{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-} */
+}
 .container {
     background:hsl(0, 0%, 98%);
     margin: 150px 100px;
@@ -82,12 +82,12 @@ h3 {
     justify-content: center;
 }
 .grid-child{
-    flex-basis: 25%;
+    flex-basis: 24%;
     flex-direction: column;
 }
 
 .supervisor,.calculator {
-    flex-basis: 20%;
+    flex-basis: 22%;
     align-self: center;
 }
 .teaser {
