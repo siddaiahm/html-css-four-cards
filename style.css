@@ -1,15 +1,14 @@
 *,
 *:before,
-*:after{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .container {
-    background:hsl(0, 0%, 98%);
-    margin: 150px 100px;
-    /* max-width: 1440px; */
-    padding: 70px;
+  background: hsl(0, 0%, 98%);
+  height: 90%;
+  padding: 70px;
 }
 /*
   ========================================
@@ -17,36 +16,42 @@
   ========================================
 */
 body {
-    background: hsl(183, 49%, 92%);
-    color: hsl(229, 6%, 66%);
-    font-family: Arial, Helvetica, sans-serif;
-    font: 600px 16px / 18px 'poppins';
-    font-size: 16px;
-  }
-h1,h2,h3 {
-    color: hsl(234, 12%, 34%);
+  background: hsl(183, 49%, 92%);
+  color: hsl(229, 6%, 66%);
+  font-family: Arial, Helvetica, sans-serif;
+  font: 600px 16px / 18px "poppins";
+  font-size: 16px;
+  min-height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-h1,h2{
-    font-size: 32px;
-    margin-bottom: 10px;
-    margin-top: 0px;
+h1,
+h2,
+h3 {
+  color: hsl(234, 12%, 34%);
+}
+h1,
+h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 .lead {
-    text-align: center;
-    padding: 10px;
-   }   
+  text-align: center;
+  padding: 10px;
+}
 .lead h1 {
-    font-weight: 700px;
+  font-weight: 700px;
 }
 .lead h2 {
-    color: hsl(229, 6%, 66%);
-    font-weight: lighter;
-    
+  color: hsl(229, 6%, 66%);
+  font-weight: lighter;
 }
 h3 {
-    font-size: 23px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+  font-size: 23px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 /*
@@ -55,134 +60,141 @@ h3 {
   ========================================
 */
 .teaser {
-    background-color: #fff;
-    margin: 13px;
-    padding: 25px;
-    box-shadow:  4px 4px 4px 4px hsl(229, 16%, 90%);
+  background-color: #fff;
+  margin: 13px;
+  padding: 25px;
+  box-shadow: 4px 4px 4px 4px hsl(229, 16%, 90%);
 }
-.supervisor{
-    border-top: 5px solid hsl(180, 62%, 55%);
+.supervisor {
+  border-top: 5px solid hsl(180, 62%, 55%);
 }
-.team-builder{
-    border-top: 5px solid hsl(0, 78%, 62%);
+.team-builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
 }
-.karma{
-    border-top: 5px solid hsl(34, 97%, 64%);
+.karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
 }
-.calculator{
-    border-top: 5px solid hsl(212, 86%, 64%);
+.calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
 }
 /*
   ========================================
   flex & rows
   ========================================
 */
-.grid,.grid-child {
-    display: flex;
-    justify-content: center;
+.grid,
+.grid-child {
+  display: flex;
+  justify-content: center;
 }
-.grid-child{
-    flex-basis: 24%;
-    flex-direction: column;
+.grid-child {
+  flex-basis: 24%;
+  flex-direction: column;
 }
 
-.supervisor,.calculator {
-    flex-basis: 22%;
-    align-self: center;
+.supervisor,
+.calculator {
+  flex-basis: 22%;
+  align-self: center;
 }
 .teaser {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .teaser img {
-    margin-top: 20px;
-    align-self: flex-end;
-    justify-content: flex-end;
+  margin-top: 20px;
+  align-self: flex-end;
+  justify-content: flex-end;
 }
 /*
   ========================================
   multiple support
   ========================================
 */
-  @media only screen and (max-width:700px) {
-    /* For mobile phones: */
-    
-    .container{
-        margin:0px;
-        padding: 20px;
-        font-size: 14px;
-    }
-    
-    .teaser {
-        margin: 10px 15px;
-        max-width: 280px;
-    }
-    h1,h2 {
-        font-size: 21px;
-    }
-    h3 {
-        font-size: 18px;
-    }
-    br {
-        content: "";
-    }
-    .grid {
-        display:flex;
-        flex-direction: column;
-    }
-   .grid-child{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+
+@media only screen and (max-width: 1300px) and (min-width: 1001px) {
+  /* For ipod : */
+
+  .container {
+    padding: 30px;
+    font-size: 15px;
   }
-  @media only screen and (max-width:1300px) and (min-width:1001px) {
-    /* For ipod : */
-    
-    .container {
-        margin: 150px 30px;
-        padding: 30px;
-        font-size: 15px;
-    }
-    .grid-child{
-        flex-basis: 32%;
-        flex-direction: column;
-    }
-    h1,h2 {
-        font-size: 30px;
-    }
-    h3 {
-        font-size: 27px;
-    }
-    .supervisor,.calculator {
-        flex-basis: 27%;
-        align-self: center;
-    }
+  .grid-child {
+    flex-basis: 32%;
+    flex-direction: column;
   }
-  @media only screen and (max-width:1000px) and (min-width:701px) {
-    /* For ipod pro: */
-    
-    .container {
-        margin: 60px 20px;
-        padding: 30px 0px;
-        font-size: 14px;
-    }
-    h1,h2 {
-        font-size: 23px;
-    }
-    h3 {
-        font-size: 19px;
-    }
-    .grid-child{
-        flex-basis: 40%;
-        flex-direction: column;
-    }
-    .team-builder,.karma{
-        padding: 10px;
-    }
-    .supervisor,.calculator {
-        padding: 10px;
-        flex-basis: 35%;
-        align-self: center;
-    }
+  h1,
+  h2 {
+    font-size: 30px;
   }
+  h3 {
+    font-size: 27px;
+  }
+  .supervisor,
+  .calculator {
+    flex-basis: 27%;
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 701px) {
+  /* For ipod pro: */
+
+  .container {
+    padding: 30px 0px;
+    font-size: 14px;
+  }
+  h1,
+  h2 {
+    font-size: 23px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  .grid-child {
+    flex-basis: 40%;
+    flex-direction: column;
+  }
+  .team-builder,
+  .karma {
+    padding: 10px;
+  }
+  .supervisor,
+  .calculator {
+    padding: 10px;
+    flex-basis: 35%;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* For mobile phones: */
+
+  .container {
+    margin: 0px;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .teaser {
+    width: 100%;
+  }
+  h1,
+  h2 {
+    font-size: 21px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  br {
+    content: "";
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-child {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
